@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mudança de humor</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="border">
+        <div class="bloco_info"><b>Personagem:</b>{{nome}}</div>
+        <div class="bloco_info"><b>Humor: <i>Feliz</i></b></div>
+            <div class="bloco_imag">
+                <img src="{{gif_1}}" alt="gif da ravena dançando">
+            </div>
+            <div class="escolha">
+                <a href="/chateada" class="botao">Avançar</a>
+            </div>
+    </div>
+    <div class="border">    
+        {% if exibir_imagem %}
+        <div class="bloco_info"><b>Personagem:</b>{{nome}}</div>
+        <div class="bloco_info"><b>Humor: <i>Não muito Feliz</i></b></div>
+            <div class="bloco_imag">
+                <img src="{{gif_2}}" alt="gif da ravena nervosa">
+            </div>
+            <div class="escolha">
+                <a href="/" class="botao">Voltar</a>
+            </div>
+        {% endif %}
+        </div>
+</body>
+</html>

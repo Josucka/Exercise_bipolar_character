@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(67, 48, 136);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 15%;
+    padding: 5px 0;
+    margin-top: auto
+}
+.bloco_info{
+    background: rgb(67, 48, 136);
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+.bloco_imag{
+    background: rgb(67, 48, 136);
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+.escolha{
+    font-size: 30px;
+    justify-content: center;
+    display: flex;
+}
+.botao{
+    color: rgb(182, 8, 8);
+}
