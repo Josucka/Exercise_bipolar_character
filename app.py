@@ -3,24 +3,32 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     nome = "Ravena"
+    humor = "Feliz"
+    botao = "avancar"
     exibir_imagem = True
-    gif_1 = "https://th.bing.com/th/id/R6acc8390d31904543ce26bad9b0e31dc?rik=dlfxcONjyXVPcQ&pid=ImgRaw"
+    gif = "https://th.bing.com/th/id/R6acc8390d31904543ce26bad9b0e31dc?rik=dlfxcONjyXVPcQ&pid=ImgRaw"
     return render_template(
         "index.html",
         nome = nome,
+        humor = humor,
+        botao = botao,
         exibir_imagem = exibir_imagem,
-        gif_1 = gif_1,
+        gif = gif,
     )
 @app.route('/chateada')
 def chateada():
     nome = "Ravena"
+    humor = "nao tao feliz"
+    botao = "voltar"
     exibir_imagem = True
-    gif_2 = "https://th.bing.com/th/id/Rcd125841ddb30e99f3371e357a21e61c?rik=SrcYTKZsYrM37w&pid=ImgRaw"
+    gif = "https://th.bing.com/th/id/Rcd125841ddb30e99f3371e357a21e61c?rik=SrcYTKZsYrM37w&pid=ImgRaw"
     return render_template(
         "index.html",
         nome = nome,
+        humor = humor,
+        botao = botao, #tenho que rever esse botao que nao ta voltando
         exibir_imagem = exibir_imagem,
-        gif_2 = gif_2
+        gif = gif
     )
 if __name__ == "__main__":
     app.run(debug=True)
